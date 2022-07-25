@@ -1,0 +1,50 @@
+.todo-item {
+    display: flex;
+    border: 1px solid #405cf5;
+    height: auto;
+    margin: 20px auto;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px 0;
+    background-color: $todo-item-background-color;
+
+    &__buttons-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info-wrapper {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 900px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+.edit-form {
+    display: flex;
+    align-items: center;
+
+    &__input_edit-mode {
+        width: 300px;
+
+        @media (max-width: 900px) {
+            width: 200px;
+        }
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}

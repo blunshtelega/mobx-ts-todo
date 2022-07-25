@@ -1,0 +1,30 @@
+.button {
+    background-color: $button-regular-color;
+    border-radius: 6px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    padding: 0 1rem;
+    text-align: center;
+    text-transform: none;
+    margin: 0 0.5rem;
+    width: 100%;
+
+    &:disabled {
+        background-color: $button-disabled-color;
+        cursor: default;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    &:hover {
+        box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+    }
+}

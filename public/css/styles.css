@@ -1,0 +1,256 @@
+@import url("http://fonts.cdnfonts.com/css/lato");
+body {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px; }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Lato", sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.button {
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 1rem;
+  text-align: center;
+  text-transform: none;
+  margin: 0 0.5rem;
+  width: 100%; }
+  .button:disabled {
+    background-color: #9ca2a7;
+    cursor: default; }
+    .button:disabled:hover {
+      box-shadow: none; }
+  .button:hover {
+    box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px; }
+
+.input-group {
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+  width: auto; }
+
+.input {
+  margin: 0 5px; }
+
+.todo-add-wrapper {
+  width: 80%;
+  margin: 30px auto; }
+
+.todo-add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .todo-add-form__input {
+    margin-bottom: 1rem;
+    width: 400px;
+    height: 30px;
+    text-indent: 10px; }
+    @media (max-width: 768px) {
+      .todo-add-form__input {
+        width: 260px; } }
+  .todo-add-form__button {
+    height: 50px;
+    width: 200px; }
+
+.todo-filter-wrapper {
+  width: 80%;
+  margin: 30px auto; }
+
+.todo-filter-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch; }
+  .todo-filter-form__input {
+    cursor: pointer; }
+
+.todo-item {
+  display: flex;
+  border: 1px solid #405cf5;
+  height: auto;
+  margin: 20px auto;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px 0;
+  background-color: #d9deff; }
+  .todo-item__buttons-wrapper {
+    display: flex;
+    align-items: center; }
+  .todo-item__info-wrapper {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 900px) {
+      .todo-item__info-wrapper {
+        margin-bottom: 20px; } }
+  @media (max-width: 900px) {
+    .todo-item {
+      flex-direction: column; } }
+
+.edit-form {
+  display: flex;
+  align-items: center; }
+  .edit-form__input_edit-mode {
+    width: 300px; }
+    @media (max-width: 900px) {
+      .edit-form__input_edit-mode {
+        width: 200px; } }
+  .edit-form__buttons-wrapper {
+    display: flex; }
+  @media (max-width: 900px) {
+    .edit-form {
+      flex-direction: column;
+      margin: 0 auto; } }
+
+.todo-wrapper {
+  width: 80%;
+  margin: 10px auto; }
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #64b0e1; }
+  .header__title {
+    margin-left: 2rem; }
+
+.footer {
+  height: 50px;
+  background-color: #64b0e1;
+  margin-top: auto; }
